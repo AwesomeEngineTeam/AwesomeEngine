@@ -1,0 +1,235 @@
+* {
+	background: #191919;
+	color: #DDDDDD;
+	border: 1px solid #5A5A5A;
+}
+
+QWidget::item:selected {
+	background: #783535;
+}
+
+QWidget:disabled
+{
+	color: #AAAAAA;
+	background-color: #390909;
+}
+
+QMenuBar::item
+{
+	background: transparent;
+}
+
+QMenuBar::item:selected
+{
+	background: transparent;
+	border: 1px solid #DD1919;
+}
+
+QMenu
+{
+	border: 1px solid #000;
+}
+
+QMenu::disabled
+{
+	color: #8A8A8A;
+	background-color: #323232;
+}
+
+QMenu::item
+{
+	padding: 2px 20px 2px 20px;
+}
+
+QMenu::item:selected
+{
+	color: #000000;
+}
+
+QMenu::separator
+{
+	height: 2px;
+	color: white;
+	padding-left: 4px;
+	margin-left: 10px;
+	margin-right: 5px;
+	background: #391919;
+}
+
+QToolButton:checked {
+	background: #5A5A5A
+}
+
+QCheckBox, QRadioButton {
+	border: none;
+}
+
+QRadioButton::indicator, QCheckBox::indicator {
+	width: 13px;
+	height: 13px;
+}
+
+QGroupBox {
+	margin-top: 6px;
+}
+
+QGroupBox::title {
+	top: -7px;
+	left: 7px;
+}
+
+QAbstractButton:hover {
+	background: #353535;
+}
+
+QAbstractButton:pressed {
+	background: #5A5A5A;
+}
+
+QAbstractItemView {
+	show-decoration-selected: 1;
+	selection-background-color: #783535;
+	selection-color: #DDDDDD;
+	alternate-background-color: #353535;
+}
+
+QHeaderView {
+	border: 1px solid #5A5A5A;
+}
+
+QHeaderView::section {
+	background: #191919;
+	border: 1px solid #5A5A5A;
+	padding: 4px;
+}
+
+QHeaderView::section:selected, QHeaderView::section::checked {
+	background: #353535;
+}
+
+QTableView {
+	gridline-color: #5A5A5A;
+}
+
+QTabBar {
+	margin-left: 2px;
+}
+
+QTabBar::tab {
+	border-radius: 0px;
+	padding: 4px;
+	margin: 4px;
+}
+
+QTabBar::tab:selected {
+	background: #353535;
+}
+
+QAbstractSpinBox {
+	padding-right: 15px;
+}
+
+QAbstractSpinBox::up-button, QAbstractSpinBox::down-button {
+	border: 1px solid #5A5A5A;
+	background: #353535;
+	subcontrol-origin: border;
+}
+
+QAbstractSpinBox::up-arrow, QAbstractSpinBox::down-arrow {
+	width: 3px;
+	height: 3px;
+	border: 1px solid #5A5A5A;
+}
+
+QSlider {
+	border: none;
+}
+
+QSlider::groove:horizontal {
+	height: 5px;
+	margin: 4px 0px 4px 0px;
+}
+
+QSlider::groove:vertical {
+	width: 5px;
+	margin: 0px 4px 0px 4px;
+}
+
+QSlider::handle {
+	border: 1px solid #5A5A5A;
+	background: #353535;
+}
+
+QSlider::handle:horizontal {
+	width: 15px;
+	margin: -4px 0px -4px 0px;
+}
+
+QSlider::handle:vertical {
+	height: 15px;
+	margin: 0px -4px 0px -4px;
+}
+
+QSlider::add-page:vertical, QSlider::sub-page:horizontal {
+	background: #783535;
+}
+
+QSlider::sub-page:vertical, QSlider::add-page:horizontal {
+	background: #353535;
+}
+
+QLabel {
+	border: none;
+}
+
+QProgressBar {
+	text-align: center;
+}
+
+QProgressBar::chunk {
+	width: 1px;
+	background-color: #783535;
+}
+
+QDockWidget::title
+{
+	text-align: center;
+	spacing: 1px;
+	background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0 #591919, stop: 0.5 #391919, stop:1 #591919);
+}
+
+/*QTreeView::branch:has-children {
+	border-image: url(assetsEditor/style/vline.png) 0;
+}
+
+QTreeView::branch:!has-children {
+	border-image: url(assetsEditor/style/branch-more.png) 0;
+}*/
+
+QTreeView::branch:open:!has-adjoins {
+	border-image: url(assetsEditor/icons/Transparent.png) 0;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+	border-image: url(assetsEditor/style/vline.png) 0;
+}
+
+QTreeView::branch:!has-children:has-siblings:adjoins-item {
+	border-image: url(assetsEditor/style/branch-more.png) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+	border-image: url(assetsEditor/style/branch-end.png) 0;
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children {
+	border-image: none;
+	image: url(assetsEditor/style/down_arrow.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children {
+	border-image: none;
+	image: url(assetsEditor/style/right_arrow.png);
+}

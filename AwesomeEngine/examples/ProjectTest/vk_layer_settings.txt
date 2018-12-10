@@ -1,0 +1,3 @@
+lunarg_api_dump.flush = TRUE
+lunarg_api_dump.file = TRUE
+lunarg_api_dump.log_filename = dump.txt

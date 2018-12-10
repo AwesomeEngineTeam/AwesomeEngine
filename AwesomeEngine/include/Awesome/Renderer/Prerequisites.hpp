@@ -1,0 +1,10 @@
+#pragma once
+
+#ifndef AWESOME_RENDERER_PREREQUISITES_GUARD
+#define AWESOME_RENDERER_PREREQUISITES_GUARD
+
+#ifdef _WIN32
+#define VK_USE_PLATFORM_WIN32_KHR
+#endif
+
+#endif

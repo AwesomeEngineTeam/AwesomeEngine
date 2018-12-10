@@ -1,0 +1,145 @@
+{
+  // See https://go.microsoft.com//fwlink//?linkid=834763 for more information about this file.
+  "configurations": [
+    // {
+    //   "name": "x86-Debug-MSVC",
+    //   "generator": "Ninja",
+    //   "configurationType": "Debug",
+    //   "inheritEnvironments": [ "msvc_x86" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": ""
+    // },
+    // {
+    //   "name": "x86-Release-MSVC",
+    //   "generator": "Ninja",
+    //   "configurationType": "Release",
+    //   "inheritEnvironments": [ "msvc_x86" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": ""
+    // },
+    // {
+    //   "name": "Debug-MSVC",
+    //   "generator": "Ninja",
+    //   "configurationType": "Debug",
+    //   "inheritEnvironments": [ "msvc_x64" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": ""
+    // },
+    // {
+    //   "name": "Release-MSVC",
+    //   "generator": "Ninja",
+    //   "configurationType": "Release",
+    //   "inheritEnvironments": [ "msvc_x64" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": ""
+    // },
+    // {
+    //   "name": "x86-Debug-Clang",
+    //   "generator": "Ninja",
+    //   "configurationType": "Debug",
+    //   "inheritEnvironments": [ "msvc_x86" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "-DCMAKE_C_FLAGS=\"-m32\" -DCMAKE_CXX_FLAGS=\"-m32\"",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": "",
+    //   "variables": [
+    //     {
+    //       "name": "CMAKE_CXX_COMPILER",
+    //       "value": "clang-cl"
+    //     },
+    //     {
+    //       "name": "CMAKE_C_COMPILER",
+    //       "value": "clang-cl"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "name": "x86-Release-Clang",
+    //   "generator": "Ninja",
+    //   "configurationType": "Release",
+    //   "inheritEnvironments": [ "msvc_x86" ],
+    //   "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+    //   "cmakeCommandArgs": "-DCMAKE_C_FLAGS=\"-m32\" -DCMAKE_CXX_FLAGS=\"-m32\"",
+    //   "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+    //   "ctestCommandArgs": "",
+    //   "variables": [
+    //     {
+    //       "name": "CMAKE_CXX_COMPILER",
+    //       "value": "clang-cl"
+    //     },
+    //     {
+    //       "name": "CMAKE_C_COMPILER",
+    //       "value": "clang-cl"
+    //     }
+    //   ]
+    // },
+    {
+      "name": "Debug-Clang",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_COMPILER",
+          "value": "clang-cl"
+        },
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "clang-cl"
+        }
+      ]
+    },
+    {
+      "name": "Release-Clang",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_COMPILER",
+          "value": "clang-cl"
+        },
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "clang-cl"
+        }
+      ]
+    },
+    {
+      "name": "RelWithDebInfo-Clang",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v -j${env.NUMBER_OF_PROCESSORS}",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_COMPILER",
+          "value": "clang-cl"
+        },
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "clang-cl"
+        }
+      ]
+    }
+  ]
+}
